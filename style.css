@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+body {
+  width: 1140px;
+  background-color: #555;
+  position: relative;
+}
+.navbar {
+  width: 1280px;
+  height: 99px;
+  margin-left: 80px;
+  background-color: #000;
+}
+
+.logo {
+  width: 170px;
+  height: 41px;
+  position: absolute;
+  top: 29px;
+  left: 80px;
+  color: #fff;
+}
+
+.logo_img {
+  width: 40px;
+  height: 40px;
+  position: absolute;
+  left: 0.4%;
+  right: 76.07%;
+  top: 0%;
+  bottom: 2.44%;
+}
+
+.logo_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.logo_text {
+  width: 114px;
+  height: 24px;
+  position: absolute;
+  top: 8px;
+  left: 51px;
+  font-family: 'Inter', sans-serif;
+  color: #fff;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 100%;
+  text-align: center;
+}
+
+.menu {
+  width: 488px;
+  height: 18px;
+  position: absolute;
+  top: 40px;
+  left: 396px;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+.menu span {
+  color: #fff;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 100%;
+}
+
+.buttons {
+  width: 213px;
+  height: 42px;
+  position: absolute;
+  top: 28px;
+  left: 1147px;
+  display: flex;
+
+}
+
+.btn_login {
+  width: 44px;
+  height: 18px;
+  position: absolute;
+  top: 12px;
+  left: 0px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  background-color: transparent;
+  border: none;
+}
+
+.btn_register {
+  width: 129px;
+  height: 42px;
+  position: absolute;
+  top: 0;
+  left: 84px;
+  background: #FFFFFF;
+  border-radius: 40px;
+  border: none;
+}
+
+.btn_register span {
+  color: #000;
+  font-size: 18px;
+  position: absolute;
+  top: 12px;
+  left: 32px;
+}
+
+/* Medium nav */
+
+@media (max-width: 1360px){
+  body {
+    width: 1000px;
+  }
+  .navbar {
+  width: 1000px;
+  }
+
+  .menu {
+  width: 488px;
+  height: 18px;
+  position: absolute;
+  top: 40px;
+  left: 280px;
+  gap: 40px;
+  display: flex;
+  flex-direction: row;
+  }
+  .buttons {
+    width: 213px;
+    height: 42px;
+    position: absolute;
+    top: 28px;
+    left: 850px;
+  }
+}
+
+/* Small nav, opened menu */
+
+@media (max-width: 1080px){
+  body {
+    width: 375px;
+  }
+
+  .navbar {
+    width: 375px;
+    height: 88px;
+    position: relative;
+  }
+
+  .logo {
+    width: 170px;
+    height: 41px;
+    position: absolute;
+    top: 24px;
+    left: 18px;
+    color: #fff;
+  }
+
+  .logo_text {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 450px;
+    left: 80px;
+    width: auto;
+    height: fit-content;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #000;
+    width: 375px;
+    height: 440px;
+    left: 0px;
+    top: 88px;
+    padding-top: 80px;
+  }
+
+  .menu span {
+    text-align: center;
+  }
+}
